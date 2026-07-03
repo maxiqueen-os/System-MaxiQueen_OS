@@ -1,12 +1,60 @@
 <aside class="mq-sidebar">
-
     <h2>Panel</h2>
-
     <ul>
-        <li>Dashboard</li>
+        <li class="active">Dashboard</li>
         <li>IA</li>
         <li>Usuarios</li>
         <li>Configuración</li>
     </ul>
-
 </aside>
+
+<style>
+    /* Contenedor Principal basado en image_c0d91f.png */
+    .mq-sidebar {
+        width: 250px;
+        min-height: 100vh;
+        background-color: #0b111e; /* Azul oscuro profundo */
+        padding: 2rem 1.5rem;
+        font-family: 'Inter', system-ui, -apple-system, sans-serif;
+        border-right: 1px solid rgba(255, 255, 255, 0.05);
+        box-sizing: border-box;
+    }
+
+    /* Estilo exacto para el título "Panel" */
+    .mq-sidebar h2 {
+        color: #f59e0b; /* Tono Ámbar/Oro */
+        font-size: 0.95rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.1em;
+        margin-bottom: 2rem;
+        padding-bottom: 0.5rem;
+        border-bottom: 1px solid rgba(245, 158, 11, 0.15);
+    }
+
+    /* Lista con espaciado vertical generoso */
+    .mq-sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 1.6rem; /* Mantiene la separación del modelo */
+    }
+
+    /* Elementos de la lista */
+    .mq-sidebar ul li {
+        color: #9ca3af;
+        font-size: 0.95rem;
+        font-weight: 500;
+        cursor: pointer;
+        transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    /* Estados visuales al interactuar */
+    .mq-sidebar ul li:hover, 
+    .mq-sidebar ul li.active {
+        color: #ffffff; /* Pasa a blanco al seleccionarse o hacer hover */
+        transform: translateX(4px); /* Sutil desplazamiento dinámico */
+    }
+</style>
